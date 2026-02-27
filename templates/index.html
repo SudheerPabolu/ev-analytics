@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualization Tool for Electric Vehicle Charge and Range Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="logo">⚡ EV Analytics</div>
+    <div class="nav-links">
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a href="{{ url_for('storyboard') }}">Storyboard</a>
+    </div>
+</nav>
+
+<header class="hero">
+    <h1>Visualization Tool for Electric Vehicle Charge and Range Analysis</h1>
+</header>
+
+<div class="main-container">
+    {% block content %}{% endblock %}
+</div>
+
+<footer>
+    © 2026 EV Analytics Internship Project | Acchyuth Tharun | P Akhil Karthik | Ramakrishna Upadhyay | Pabolu Sudheer
+</footer>
+
+</body>
+</html>
